@@ -1,11 +1,11 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/api/v1/info")
 def hello():
     return "Hello Cloud-Native-Python World!"
 
-@app.route("/subWorld")
+@app.route("/api/v1/info/subworld")
 def helloSubworld():
     return "Hello Lower Cloud-Native-Python World!"
 
